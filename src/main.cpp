@@ -46,7 +46,7 @@ typedef ostream& (*output_function) (const ostream & out);
 
 
 
-
+ostream& chocolate_spaghet_oddity(ostream &out);
 
 
 int main(int argc, char* argv[] )
@@ -54,7 +54,12 @@ int main(int argc, char* argv[] )
 
     // Calls to output functions
 
-
+    chocolate_spaghet_oddity(cout);
 
     return 0;
+}
+
+ostream& chocolate_spaghet_oddity(ostream &out){
+    out << "Have you ever imagined a world with no hypothetical situations?" << endl;
+    return out;
 }
