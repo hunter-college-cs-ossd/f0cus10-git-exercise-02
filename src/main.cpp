@@ -51,12 +51,20 @@ ostream& printer(ostream& out){
 }
 
 output_function intro = &printer;
+ostream& chocolate_spaghet_oddity(ostream &out);
+
 
 int main(int argc, char* argv[] )
 {
     // Calls to output functions
     (*intro)(cout);
 
+    chocolate_spaghet_oddity(cout);
+
     return 0;
 }
 
+ostream& chocolate_spaghet_oddity(ostream &out){
+    out << "Have you ever imagined a world with no hypothetical situations?" << endl;
+    return out;
+}
