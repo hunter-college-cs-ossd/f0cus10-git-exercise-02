@@ -11,16 +11,16 @@
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
   The main program calls N functions, each with the syntax defined
-  by the output_function typedef defined below. Each function must be 
-  named 
+  by the output_function typedef defined below. Each function must be
+  named
        username_oddity
 
   where username is the GitHub username of its author.
-  For example, 
+  For example,
       output_function  stewartweiss_oddity;
 
   Oddities are found in the file "oddities.txt" in the project source directory
- 
+
 ******************************************************************************/
 
 #include <iostream>
@@ -39,7 +39,7 @@ typedef ostream& (*output_function) (ostream & out);
 
 
 /******************************************************************************
-        
+
                         All Function Definitions
 
 ******************************************************************************/
@@ -53,7 +53,7 @@ ostream& printer(ostream& out){
 output_function intro = &printer;
 ostream& chocolate_spaghet_oddity(ostream &out);
 ostream& gutierrezjdr_oddity(ostream &out);
-
+ostream& johncgenere_oddity(ostream &out);
 
 
 int main(int argc, char* argv[] )
@@ -63,6 +63,7 @@ int main(int argc, char* argv[] )
 
     chocolate_spaghet_oddity(cout);
 	gutierrezjdr_oddity(cout);
+    johncgenere_oddity(cout);
 
     return 0;
 }
@@ -78,3 +79,7 @@ ostream&gutierrezjdr_oddity (ostream & out)
 	
 	return out;
 } 
+ostream& johncgenere_oddity(ostream &out){
+    out << "Why do we drive on parkways and park on driveways?" << endl;
+    return out;
+}
