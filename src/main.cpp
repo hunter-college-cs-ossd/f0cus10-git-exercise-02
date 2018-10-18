@@ -52,6 +52,8 @@ ostream& printer(ostream& out){
 
 output_function intro = &printer;
 ostream& chocolate_spaghet_oddity(ostream &out);
+ostream& gutierrezjdr_oddity(ostream &out);
+
 
 
 int main(int argc, char* argv[] )
@@ -60,6 +62,7 @@ int main(int argc, char* argv[] )
     (*intro)(cout);
 
     chocolate_spaghet_oddity(cout);
+	gutierrezjdr_oddity(cout);
 
     return 0;
 }
@@ -68,3 +71,10 @@ ostream& chocolate_spaghet_oddity(ostream &out){
     out << "Have you ever imagined a world with no hypothetical situations?" << endl;
     return out;
 }
+
+ostream&gutierrezjdr_oddity (ostream & out)
+{
+	out<<"Why do they put Braille dots on the keypad of the drive-up ATM?"<<endl;
+	
+	return out;
+} 
